@@ -53,7 +53,7 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[faixaEtaria1]" class="dropdown" required>
-                <option></option>
+                <option value="-"></option>
               <option value="4-5">4-5 anos</option>
               <option value="6-10">6-10 anos</option>
               <option value="10-13">10-13 anos</option>
@@ -68,7 +68,7 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[genero1]" class="dropdown" required>
-                <option></option>
+                <option value="-"></option>
               <option value="masculino">Masculino</option>
               <option value="feminino">Feminino</option>
               <option value="outro">Outro</option>
@@ -81,7 +81,7 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[raca1]" class="dropdown" required>
-                <option></option>
+                <option value="-"></option>
               <option value="masculino">Branco</option>
               <option value="feminino">Preto</option>
               <option value="outro">Pardo</option>
@@ -109,7 +109,7 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[faixaEtaria2]" class="dropdown" >
-                <option></option>
+                <option value="-"></option>
               <option value="4-5">4-5 anos</option>
               <option value="6-10">6-10 anos</option>
               <option value="10-13">10-13 anos</option>
@@ -124,7 +124,7 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[genero2]" class="dropdown" >
-                <option></option>
+                <option value="-"></option>
               <option value="masculino">Masculino</option>
               <option value="feminino">Feminino</option>
               <option value="outro">Outro</option>
@@ -137,7 +137,7 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[raca2]" class="dropdown" >
-                <option></option>
+                <option value="-"></option>
               <option value="masculino">Branco</option>
               <option value="feminino">Preto</option>
               <option value="outro">Pardo</option>
@@ -165,7 +165,7 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[faixaEtaria3]" class="dropdown" >
-                <option></option>
+                <option value="-"></option>
               <option value="4-5">4-5 anos</option>
               <option value="6-10">6-10 anos</option>
               <option value="10-13">10-13 anos</option>
@@ -180,7 +180,7 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[genero3]" class="dropdown" >
-                <option></option>
+                <option value="-"></option>
               <option value="masculino">Masculino</option>
               <option value="feminino">Feminino</option>
               <option value="outro">Outro</option>
@@ -193,7 +193,7 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[raca3]" class="dropdown" >
-                <option></option>
+                <option value="-"></option>
               <option value="masculino">Branco</option>
               <option value="feminino">Preto</option>
               <option value="outro">Pardo</option>
@@ -221,7 +221,7 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[faixaEtaria4]" class="dropdown" >
-                <option></option>
+                <option value="-"></option>
               <option value="4-5">4-5 anos</option>
               <option value="6-10">6-10 anos</option>
               <option value="10-13">10-13 anos</option>
@@ -236,7 +236,7 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[genero4]" class="dropdown" >
-                <option></option>
+                <option value="-"></option>
               <option value="masculino">Masculino</option>
               <option value="feminino">Feminino</option>
               <option value="outro">Outro</option>
@@ -249,7 +249,7 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[raca4]" class="dropdown" >
-              <option></option>
+             <option value="-"></option>
               <option value="masculino">Branco</option>
               <option value="feminino">Preto</option>
               <option value="outro">Pardo</option>
@@ -263,10 +263,19 @@
       </div>
       <div class="rowTab">
         <div class="labels">
-          <label for="Ocupacao/Empregabilidade">* Ocupação/Empregabilidade:</label>
+          <label for="Ocupacao/Empregabilidade">* Ocupação/Empregabilidade do Pai:</label>
         </div>
         <div class="rightTab">
-          <textarea id="comments" class="input-field" style="height: 50px; resize: vertical;" name="data[Ocupacao/Empregabilidade]" ></textarea>
+          <textarea id="comments" class="input-field" cols="50" rows="10" style="height: 50px; resize: vertical;" name="data[Ocupacao/Empregabilidade]" ></textarea>
+        </div>
+      </div>
+        
+         <div class="rowTab">
+        <div class="labels">
+          <label for="Ocupacao/Empregabilidade">* Ocupação/Empregabilidade do Da Mãe:</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" cols="50" rows="10" style="height: 50px; resize: vertical;" name="data[Ocupacao/Empregabilidade]" ></textarea>
         </div>
       </div>
      
@@ -276,12 +285,12 @@
           </div>
           <div class="rightTab">
             <select id="dropdown" name="data[mediaSalarial]" class="dropdown" >
-              <option></option>
-              <option value="salario1">até-1.903.98</option>
-              <option value="salario2">De R$1.903,99 até R$2.826,65</option>
-              <option value="salario3">De R$2.826,66 até R$3.751,05</option>
-              <option value="salario4">De R$3.751,06 até R$4.664,68</option>
-              <option value="salario5">Acima de R$4.664,68</option>
+              <option value="-"></option>
+              <option value="Até 1 salário minimo">Até 1 salário minimo</option>
+              <option value="De 1 a 2 salários minimos">De 1 a 2 salários minimos</option>
+              <option value="De 2 a 3 salários minimos">De 2 a 3 salários minimos</option>
+              <option value="De 4 a 5 salários minimos">De 4 a 5 salários minimos</option>
+              <option value="De 6 a 10 salários minimos">De 6 a 10 salários minimos</option>
             </select>
           </div>
         </div>
