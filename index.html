@@ -269,14 +269,23 @@
           <textarea id="comments" class="input-field" style="height: 50px; resize: vertical;" name="data[Ocupacao/Empregabilidade]" ></textarea>
         </div>
       </div>
-      <div class="rowTab">
-        <div class="labels">
-          <label id="name-label" for="mediaSalarial">* Media salarial: </label>
+     
+        <div class="rowTab">
+          <div class="labels">
+            <label for="mediaSalarial">* Media Salarial:</label>
+          </div>
+          <div class="rightTab">
+            <select id="dropdown" name="data[mediaSalarial]" class="dropdown" >
+              <option></option>
+              <option value="salario1">até-1.903.98</option>
+              <option value="salario2">De R$1.903,99 até R$2.826,65</option>
+              <option value="salario3">De R$2.826,66 até R$3.751,05</option>
+              <option value="salario4">De R$3.751,06 até R$4.664,68</option>
+              <option value="salario5">Acima de R$4.664,68</option>
+            </select>
+          </div>
         </div>
-        <div class="rightTab">
-          <input autofocus type="number" name="data[mediaSalarial]" id="name" class="input-field" placeholder="media salarial" />
-        </div>
-      </div>
+     
       <div class="rowTab">
         <div class="labels">
           <label for="atividadesForaEscola">* Atividades frequentadas pelos estudantes no contraturno:</label>
