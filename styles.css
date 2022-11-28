@@ -133,17 +133,27 @@ input[type="checkbox"] {
 @media screen and (max-width: 520px) {
   .labels {
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
   .rightTab {
     width: 80%;
-    float: left;
+    float: center;
   }
   .input-field {
     width: 100%;
+    float: center;
   }
   select {
-    width: 100%;
+    width: 80%;
+    float: center;
+  }
+  .dropdown,.rightTab{
+    width: 80%;
+    float: center;
+    text-align: center;
+  }
+  .form-control{
+    text-align: center;
   }
  .titulo-sessao{
    display: none;
