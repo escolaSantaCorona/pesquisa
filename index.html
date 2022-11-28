@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <head>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    </head>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   </head>
-  <body>
-    <div id="form-outer">
-        <img id="logo" src="./logo-escola.png" alt="logo"/>
-      <h1 id="titulo"> DIAGNÓSTICO DA COMUNIDADE SANTA CORONA </h1>
-      
-      <p class="description" >
-        Em reunião com nossa mantenedora-SMED,
+  <link rel="stylesheet" href="styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="form-outer">
+    <img id="logo" src="./logo-escola.png" alt="logo" />
+    <h1 id="titulo"> DIAGNÓSTICO DA COMUNIDADE SANTA CORONA </h1>
+
+    <p class="description">
+      Em reunião com nossa mantenedora-SMED,
       orientada pela secretária da educação, a fim de manter uma educação de qualidade e
-       compor a proposta pedagógica da escola, que norteará nossas ações para os próximos anos,
-      estamos solicitando algumas informações junto as familias que usufruem de nossa escola e 
+      compor a proposta pedagógica da escola, que norteará nossas ações para os próximos anos,
+      estamos solicitando algumas informações junto as familias que usufruem de nossa escola e
       estarão em absoluto sigilo das informações prestadas.</p>
 
 
-      <p style="text-align:center; color: black;" class="description"> Abaixo segue uma pesquisa simples, que deve ser respondida o mais breve possível.
-        Caso não consiga responder através do celular, a escola pode disponiblizar 
-        um dispositivo para o responsável responder.
-      </p>
-      <form action="https://sheetdb.io/api/v1/exf2lql2mmyey?sheet=Página1" method="POST" id="sheetdb-form">
+    <p style="text-align:center; color: black;" class="description"> Abaixo segue uma pesquisa simples, que deve ser
+      respondida o mais breve possível.
+      Caso não consiga responder através do celular, a escola pode disponiblizar
+      um dispositivo para o responsável responder.
+    </p>
+    <form action="https://sheetdb.io/api/v1/exf2lql2mmyey?sheet=Página1" method="POST" id="sheetdb-form">
       <div class="rowTab">
         <div class="labels">
           <label for="quantidadeDeFilhos">* Selecione a quantidade de crianças matriculadas na escola</label>
@@ -42,291 +46,292 @@
           </select>
         </div>
       </div>
+
+
       <div id="filho1" class="option-target hidden">
-        
         <div class="rowTab">
-            <hr class="line" color="#424242" size="2" />
-        <p class="titulo-sessao"> FILHO 1: </p>
-         
-        <div class="rowTab">
-          <div class="labels">
-            <label for="faixaEtaria1">* Faixa Etária do filho 1:</label>
-          </div>
-          <div class="rightTab">
-            <select id="dropdown" name="data[faixaEtaria1]" class="dropdown" required>
-              <option value="-">Selecione</option>
-              <option value="4-5">4-5 anos</option>
-              <option value="6-10">6-10 anos</option>
-              <option value="10-13">10-13 anos</option>
-              <option value="13-16">13-16 anos</option>
-              <option value="maior-16">maior que 16</option>
-            </select>
-          </div>
-        </div>
-        <div class="rowTab">
-          <div class="labels">
-            <label for="genero1">* Gênero do filho 1:</label>
-          </div>
-          <div class="rightTab">
-            <select id="dropdown" name="data[genero1]" class="dropdown" required>
-              <option value="-">Selecione</option>
-              <option value="masculino">Masculino</option>
-              <option value="feminino">Feminino</option>
-              <option value="outro">Outro</option>
-            </select>
-          </div>
-        </div>
-        <div class="rowTab">
-          <div class="labels">
-            <label for="raca1">* Etnia/Raça do filho 1:</label>
-          </div>
-          <div class="rightTab">
-            <select id="dropdown" name="data[raca1]" class="dropdown" required>
-              <option value="-">Selecione</option>
-              <option value="masculino">Branco</option>
-              <option value="feminino">Preto</option>
-              <option value="outro">Pardo</option>
-              <option value="outro">Amarelo</option>
-              <option value="outro">Indigena</option>
-              <option value="outro">Nao Declara</option>
-            </select>
-          </div>
-        </div>
-      </div>
-       <hr class="line" color="#424242" size="2" />
-      <div id="filho2" class="option-target hidden">
-        <p class="titulo-sessao"> FILHO 2: </p>
-        
-        <div class="rowTab">
-          <div class="labels">
-            <label for="faixaEtaria2">* Faixa Etária do filho 2:</label>
-          </div>
-          <div class="rightTab">
-            <select id="dropdown" name="data[faixaEtaria2]" class="dropdown" >
-              <option value="-">Selecione</option>
-              <option value="4-5">4-5 anos</option>
-              <option value="6-10">6-10 anos</option>
-              <option value="10-13">10-13 anos</option>
-              <option value="13-16">13-16 anos</option>
-              <option value="maior-16">maior que 16</option>
-            </select>
-          </div>
-        </div>
-        <div class="rowTab">
-          <div class="labels">
-            <label for="genero2">* Gênero do filho 2:</label>
-          </div>
-          <div class="rightTab">
-            <select id="dropdown" name="data[genero2]" class="dropdown" >
-              <option value="-">Selecione</option>
-              <option value="masculino">Masculino</option>
-              <option value="feminino">Feminino</option>
-              <option value="outro">Outro</option>
-            </select>
-          </div>
-        </div>
-        <div class="rowTab">
-          <div class="labels">
-            <label for="raca2">* Etnia/Raça do filho 2:</label>
-          </div>
-          <div class="rightTab">
-            <select id="dropdown" name="data[raca2]" class="dropdown" >
-              <option value="-">Selecione</option>
-              <option value="masculino">Branco</option>
-              <option value="feminino">Preto</option>
-              <option value="outro">Pardo</option>
-              <option value="outro">Amarelo</option>
-              <option value="outro">Indigena</option>
-              <option value="outro">Nao Declara</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div id="filho3" class="option-target hidden">
-         <hr class="line" color="#424242" size="2" />
-        <p class="titulo-sessao"> FILHO 3: </p>
-        
-        <div class="rowTab">
-          <div class="labels">
-            <label for="faixaEtaria3">* Faixa Etária do filho 3:</label>
-          </div>
-          <div class="rightTab">
-            <select id="dropdown" name="data[faixaEtaria3]" class="dropdown" >
-              <option value="-">Selecione</option>
-              <option value="4-5">4-5 anos</option>
-              <option value="6-10">6-10 anos</option>
-              <option value="10-13">10-13 anos</option>
-              <option value="13-16">13-16 anos</option>
-              <option value="maior-16">maior que 16</option>
-            </select>
-          </div>
-        </div>
-        <div class="rowTab">
-          <div class="labels">
-            <label for="genero3">* Gênero do filho 3:</label>
-          </div>
-          <div class="rightTab">
-            <select id="dropdown" name="data[genero3]" class="dropdown" >
-              <option value="-">Selecione</option>
-              <option value="masculino">Masculino</option>
-              <option value="feminino">Feminino</option>
-              <option value="outro">Outro</option>
-            </select>
-          </div>
-        </div>
-        <div class="rowTab">
-          <div class="labels">
-            <label for="raca3">* Etnia/Raça do filho 3:</label>
-          </div>
-          <div class="rightTab">
-            <select id="dropdown" name="data[raca3]" class="dropdown" >
-              <option value="-">Selecione</option>
-              <option value="masculino">Branco</option>
-              <option value="feminino">Preto</option>
-              <option value="outro">Pardo</option>
-              <option value="outro">Amarelo</option>
-              <option value="outro">Indigena</option>
-              <option value="outro">Nao Declara</option>
-            </select>
-          </div>
-        </div>
-         <hr class="line" color="#424242" size="2" />
-      </div>
-      <div id="filho4" class="option-target hidden">
-        <p class="titulo-sessao"> FILHO 4: </p>
-        
-        <div class="rowTab">
-          <div class="labels">
-            <label for="faixaEtaria4">* Faixa Etaria do filho 4:</label>
-          </div>
-          <div class="rightTab">
-            <select id="dropdown" name="data[faixaEtaria4]" class="dropdown" >
+          <p class="titulo-sessao"> FILHO 1: </p>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="faixaEtaria1">* Faixa Etária do filho 1:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="data[faixaEtaria1]" class="dropdown" required>
                 <option value="-">Selecione</option>
-              <option value="4-5">4-5 anos</option>
-              <option value="6-10">6-10 anos</option>
-              <option value="10-13">10-13 anos</option>
-              <option value="13-16">13-16 anos</option>
-              <option value="maior-16">maior que 16</option>
-            </select>
+                <option value="4-5">4-5 anos</option>
+                <option value="6-10">6-10 anos</option>
+                <option value="10-13">10-13 anos</option>
+                <option value="13-16">13-16 anos</option>
+                <option value="maior-16">maior que 16</option>
+              </select>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="genero1">* Gênero do filho 1:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="data[genero1]" class="dropdown" required>
+                <option value="-">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="raca1">* Etnia/Raça do filho 1:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="data[raca1]" class="dropdown" required>
+                <option value="-">Selecione</option>
+                <option value="masculino">Branco</option>
+                <option value="feminino">Preto</option>
+                <option value="outro">Pardo</option>
+                <option value="outro">Amarelo</option>
+                <option value="outro">Indigena</option>
+                <option value="outro">Nao Declara</option>
+              </select>
+            </div>
           </div>
         </div>
+
+
+        <div id="filho2" class="option-target hidden">
+          <hr class="line" color="#424242" size="2" />
+          <p class="titulo-sessao"> FILHO 2: </p>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="faixaEtaria2">* Faixa Etária do filho 2:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="data[faixaEtaria2]" class="dropdown">
+                <option value="-">Selecione</option>
+                <option value="4-5">4-5 anos</option>
+                <option value="6-10">6-10 anos</option>
+                <option value="10-13">10-13 anos</option>
+                <option value="13-16">13-16 anos</option>
+                <option value="maior-16">maior que 16</option>
+              </select>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="genero2">* Gênero do filho 2:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="data[genero2]" class="dropdown">
+                <option value="-">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="raca2">* Etnia/Raça do filho 2:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="data[raca2]" class="dropdown">
+                <option value="-">Selecione</option>
+                <option value="masculino">Branco</option>
+                <option value="feminino">Preto</option>
+                <option value="outro">Pardo</option>
+                <option value="outro">Amarelo</option>
+                <option value="outro">Indigena</option>
+                <option value="outro">Nao Declara</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="filho3" class="option-target hidden">
+          <hr class="line" color="#424242" size="2" />
+          <p class="titulo-sessao"> FILHO 3: </p>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="faixaEtaria3">* Faixa Etária do filho 3:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="data[faixaEtaria3]" class="dropdown">
+                <option value="-">Selecione</option>
+                <option value="4-5">4-5 anos</option>
+                <option value="6-10">6-10 anos</option>
+                <option value="10-13">10-13 anos</option>
+                <option value="13-16">13-16 anos</option>
+                <option value="maior-16">maior que 16</option>
+              </select>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="genero3">* Gênero do filho 3:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="data[genero3]" class="dropdown">
+                <option value="-">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="raca3">* Etnia/Raça do filho 3:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="data[raca3]" class="dropdown">
+                <option value="-">Selecione</option>
+                <option value="masculino">Branco</option>
+                <option value="feminino">Preto</option>
+                <option value="outro">Pardo</option>
+                <option value="outro">Amarelo</option>
+                <option value="outro">Indigena</option>
+                <option value="outro">Nao Declara</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+        <hr class="line" color="#424242" size="2" />
+        <div id="filho4" class="option-target hidden">
+          <p class="titulo-sessao"> FILHO 4: </p>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="faixaEtaria3">* Faixa Etária do filho 4:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="data[faixaEtaria3]" class="dropdown">
+                <option value="-">Selecione</option>
+                <option value="4-5">4-5 anos</option>
+                <option value="6-10">6-10 anos</option>
+                <option value="10-13">10-13 anos</option>
+                <option value="13-16">13-16 anos</option>
+                <option value="maior-16">maior que 16</option>
+              </select>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="genero3">* Gênero do filho 4:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="data[genero3]" class="dropdown">
+                <option value="-">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="raca3">* Etnia/Raça do filho 4:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="data[raca3]" class="dropdown">
+                <option value="-">Selecione</option>
+                <option value="masculino">Branco</option>
+                <option value="feminino">Preto</option>
+                <option value="outro">Pardo</option>
+                <option value="outro">Amarelo</option>
+                <option value="outro">Indigena</option>
+                <option value="outro">Nao Declara</option>
+              </select>
+            </div>
+          </div>
+          <hr class="line" color="#424242" size="2" />
+        </div>
+
+
         <div class="rowTab">
           <div class="labels">
-            <label for="genero4">* Gênero do filho 4:</label>
+            <label for="religiao">* Qual Religião sua familia professa?</label>
           </div>
           <div class="rightTab">
-            <select id="dropdown" name="data[genero4]" class="dropdown" >
+            <select id="dropdown" name="data[religiao]" class="dropdown" required>
               <option value="">Selecione</option>
-              <option value="masculino">Masculino</option>
-              <option value="feminino">Feminino</option>
-              <option value="outro">Outro</option>
+              <option value="Católica">Católica</option>
+              <option value="Evangélica">Evangélica</option>
+              <option value="Espirita">Espírita</option>
+              <option value="Religião Afro-Brasileira">Religião Afro-Brasileira</option>
+              <option value="Ateismo">Ateísmo</option>
+              <option value="Não possui Religião">Não possui Religião</option>
             </select>
           </div>
         </div>
+
+
         <div class="rowTab">
           <div class="labels">
-            <label for="raca4">* Etnia/Raça do filho 4:</label>
+            <label for="Nucleofamiliar">* Quantas pessoas constituem o núcleo familiar?</label>
           </div>
           <div class="rightTab">
-            <select id="dropdown" name="data[raca4]" class="dropdown" >
-              <option value="-">Selecione</option>
-              <option value="masculino">Branco</option>
-              <option value="feminino">Preto</option>
-              <option value="outro">Pardo</option>
-              <option value="outro">Amarelo</option>
-              <option value="outro">Indigena</option>
-              <option value="outro">Nao Declara</option>
-            </select>
-          </div>
-        </div>
-         <hr class="line" color="#424242" size="2" />
-      </div>
-
-
-
-      <div class="rowTab">
-        <div class="labels">
-          <label for="religiao">* Qual Religião sua familia professa?</label>
-        </div>
-        <div class="rightTab">
-          <select id="dropdown" name="data[religiao]" class="dropdown" required >
-            <option value="">Selecione</option>
-            <option value="Católica">Católica</option>
-            <option value="Evangélica">Evangélica</option>
-            <option value="Espirita">Espirita</option>
-            <option value="Religião Afro-Brasileira">Religião Afro-Brasileira</option>
-            <option value="Ateismo">Ateismo</option>
-            <option value="Não possui Religião">Não possui Religião</option>
-          </select>
-        </div>
-      </div>
-
-
-      <div class="rowTab">
-        <div class="labels">
-          <label for="Nucleofamiliar">* Quantas pessoas constituem o núcleo familiar?</label>
-        </div>
-        <div class="rightTab">
-          <select id="dropdown" name="data[Nucleofamiliar]" class="dropdown"  required >
-            <option value="">Selecione</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="rowTab">
-        <div class="labels">
-          <label for="CasaFamiliar">* A casa em que a familia mora é: </label>
-        </div>
-        <div class="rightTab">
-          <select id="dropdown" name="data[CasaFamiliar]" class="dropdown" required  >
-            <option value="">Selecione</option>
-            <option value="Própria">Própria</option>
-            <option value="Alugada">Alugada</option>
-            <option value="Compartilhada">Compartilhada</option>
-            <option value="Cedida">Cedida</option>
-            <option value="Outro">Outro</option>
-          </select>
-        </div>
-      </div>
-      
-      <div class="rowTab">
-        <div class="labels">
-          <label for="trabalhoFamilia">* A renda da familia é atrvés de que tipo de trabalho?</label>
-        </div>
-        <div class="rightTab">
-          <select id="dropdown" name="data[trabalhoFamilia]" class="dropdown" required >
-            <option value="">Selecione</option>
-            <option value="Trabalho Formal ou Assalariado(carteira assinada)">Trabalho Formal ou Assalariado(carteira assinada)</option>
-            <option value="Trabalho Autonomo">Trabalho Autonomo</option>
-            <option value="Empregado(a) Doméstica">Empregado(a) Doméstica</option>
-            <option value="Estágio Profissional">Estágio Profissional</option>
-            <option value="Trabalho Informal">Trabalho Informal</option>
-            <option value="Trabalho Voluntário">Trabalho Voluntário</option>
-          </select>
-        </div>
-      </div>
-
-
-
-     
-        <div class="rowTab">
-          <div class="labels">
-            <label for="mediaSalarial">* Media Salarial:</label>
-          </div>
-          <div class="rightTab">
-            <select id="dropdown" name="data[mediaSalarial]" class="dropdown" required >
+            <select id="dropdown" name="data[Nucleofamiliar]" class="dropdown" required>
               <option value="">Selecione</option>
-              <option value="Menos de 1 salário minimo">Menos de 1 salário minimo</option>
-              <option value="De 1 a 3 salários minimos">De 1 a 3 salários minimos</option>
-              <option value="De 3 a 5 salários minimos">De 2 a 3 salários minimos</option>
-              <option value="De 5 a 7 salários minimos">De 4 a 5 salários minimos</option>
-              <option value="Mais que 7 salários minimos">Mais que 7 salários minimos</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label for="CasaFamiliar">* A casa em que a familia mora é: </label>
+          </div>
+          <div class="rightTab">
+            <select id="dropdown" name="data[CasaFamiliar]" class="dropdown" required>
+              <option value="">Selecione</option>
+              <option value="Própria">Própria</option>
+              <option value="Alugada">Alugada</option>
+              <option value="Compartilhada">Compartilhada</option>
+              <option value="Cedida">Cedida</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label for="trabalhoFamilia">* A renda da familia é através de que tipo de trabalho?</label>
+          </div>
+          <div class="rightTab">
+            <select id="dropdown" name="data[trabalhoFamilia]" class="dropdown" required>
+              <option value="">Selecione</option>
+              <option value="Trabalho Formal ou Assalariado(carteira assinada)">Trabalho Formal ou Assalariado(carteira
+                assinada)</option>
+              <option value="Trabalho Autonomo">Trabalho Autonomo</option>
+              <option value="Empregado(a) Doméstica">Empregado(a) Doméstica</option>
+              <option value="Estágio Profissional">Estágio Profissional</option>
+              <option value="Trabalho Informal">Trabalho Informal</option>
+              <option value="Trabalho Voluntário">Trabalho Voluntário</option>
+            </select>
+          </div>
+        </div>
+
+
+
+
+        <div class="rowTab">
+          <div class="labels">
+            <label for="mediaSalarial">* Média Salarial:</label>
+          </div>
+          <div class="rightTab">
+            <select id="dropdown" name="data[mediaSalarial]" class="dropdown" required>
+              <option value="">Selecione</option>
+              <option value="Menos de 1 salário minimo">Menos de 1 salário minimo (Menos de R$ 1212,00)</option>
+              <option value="De 1 a 3 salários minimos">De 1 a 2 salários minimos(De R$ 1212,00 até R$ 2424,00)</option>
+              <option value="De 3 a 5 salários minimos">De 2 a 3 salários minimos(De R$ 2424,00 até R$ 3636,00)</option>
+              <option value="De 5 a 7 salários minimos">De 3 a 4 salários minimos(De R$ 3636,00 até R$ 4848,00)</option>
+              <option value="Mais que 7 salários minimos">Mais que 5 salários minimos(Mais que R$ 6060,00)</option>
             </select>
           </div>
         </div>
@@ -338,7 +343,7 @@
             <label for="CuidadoCriancas">* Quem cuida das crianças no turno contrário da escola?</label>
           </div>
           <div class="rightTab">
-            <select id="dropdown" name="data[CuidadoCriancas]" class="dropdown" required  >
+            <select id="dropdown" name="data[CuidadoCriancas]" class="dropdown" required>
               <option value="">Selecione</option>
               <option value="Mãe ou Pai">Mãe ou Pai</option>
               <option value="Avó ou Avô">Avó ou Avô</option>
@@ -347,17 +352,19 @@
             </select>
           </div>
         </div>
-      <div class="rowTab">
-        <div class="labels">
-          <label for="atividadesForaEscola">* Atividades frequentadas pelos estudantes no contraturno:</label>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="atividadesForaEscola">* Atividades frequentadas pelos estudantes no contraturno:</label>
+          </div>
+          <div class="rightTab">
+            <textarea id="comments" class="input-field" style="height: 50px; resize: vertical;"
+              name="data[atividadesForaEscola]"></textarea>
+          </div>
         </div>
-        <div class="rightTab">
-          <textarea id="comments" class="input-field" style="height: 50px; resize: vertical;" name="data[atividadesForaEscola]"></textarea>
-        </div>
-      </div>
-      <button id="submit" type="submit">Enviar</button>
-      </form>
-    </div>
-  </body>
-  <script src="./script.js"></script>
+        <button id="submit" type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+<script src="./script.js"></script>
+
 </html>
