@@ -90,23 +90,23 @@ input[type="checkbox"] {
 }
 
 #submit {
-  background-color: #3B82F6; 
+  background-image: background-image: linear-gradient(to right, #31c48d); 
+  background-color: #34D399; 
+  background-color: #10B981; 
+  background-color: #059669; 
   color: #ffffff; 
-  font-weight: 700; 
-  border-radius: 0.25rem; 
-  border-bottom-width: 4px; 
-  border-color: #1D4ED8; 
-  font-size: 1em;
+  font-size: 0.875rem;
+  line-height: 1.25rem; 
+  font-weight: 500; 
+  text-align: center; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
   height: 40px;
   width: 96px;
   margin: 10px;
-  border: 0px solid;
   cursor:pointer;
 }
-#submit:hover{
-background-color: #60A5FA; 
-border-color: #3B82F6; 
-}
+
 
 .dropdown,
 .form-control {
