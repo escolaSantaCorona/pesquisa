@@ -90,15 +90,22 @@ input[type="checkbox"] {
 }
 
 #submit {
-  background-color: #107bff;
-  border-radius: 4px;
-  color: white;
+  background-color: #3B82F6; 
+  color: #ffffff; 
+  font-weight: 700; 
+  border-radius: 0.25rem; 
+  border-bottom-width: 4px; 
+  border-color: #1D4ED8; 
   font-size: 1em;
   height: 40px;
   width: 96px;
   margin: 10px;
   border: 0px solid;
   cursor:pointer;
+}
+#submit:hover{
+background-color: #60A5FA; 
+border-color: #3B82F6; 
 }
 
 .dropdown,
